@@ -1,5 +1,6 @@
 package Oop;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Person {
@@ -53,8 +54,9 @@ public class Person {
     	this.height = newHeight;
     }
     
-    public double IBM() {
-    	return weight / (height * height);
+    public String IBM() {
+    	DecimalFormat df = new DecimalFormat("#.##");
+    	return df.format(weight / (height * height));
     }
     
     public static void main(String[] args) {
@@ -71,6 +73,8 @@ public class Person {
 		boolean gender = ("nam".equals(sc.nextLine())) ? true : false;
 		Person person2 = new Person(name, age, gender);
 		
+		person1.setName("avshhd");
+		System.out.println(person1.getName());
 		person2.showInfo();
 		System.out.println(person2.getName());
 		person1.speak(person2, "Den gio hoc");
