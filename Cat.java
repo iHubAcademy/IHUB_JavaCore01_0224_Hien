@@ -16,12 +16,14 @@ public class Cat extends Animal{
 	
 	@Override
 	public String toString() {
-		return "Cat [type=" + type + "]";
+		String s = String.valueOf(getAge());
+		return "Cat [type=" + type + " name=" + getName() + " age=" + s + "]";
 	}
 	public static void main(String[] args) {
 		Cat cat = new Cat();
 		cat.setAge(3);
 		cat.setName("aaaa");
+		cat.setType("Black");
 		System.out.println("Ten: " + cat.getName());
 		System.out.println("Tuoi: " + cat.getAge());
 		System.out.println(cat.toString());
