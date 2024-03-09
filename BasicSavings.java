@@ -1,5 +1,5 @@
 package Inheritance;
 
-public class BasicSavings {
-
+public class BasicSavings extends BankAccount {
+	private float interestRate;
 }
