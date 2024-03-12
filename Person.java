@@ -61,7 +61,8 @@ public class Person {
 	}
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", gender=" + gender + ", birthday=" + birthday + ", address=" + address + "]";
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy/MM/dd");
+		return "Person [name=" + name + ", gender=" + gender + ", birthday=" + sf.format(birthday) + ", address=" + address + "]";
 	}
 	
 }
