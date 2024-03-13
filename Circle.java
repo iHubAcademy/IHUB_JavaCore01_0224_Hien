@@ -2,7 +2,7 @@ package Abstract;
 
 import java.text.DecimalFormat;
 
-public class Circle extends AbstractShape {
+public class Circle extends AbstractShape implements Resizeable{
 	private double radius;
 	
 	public Circle() {
@@ -21,7 +21,10 @@ public class Circle extends AbstractShape {
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
-
+	
+	public void resize(double factor) {
+		this.radius /= factor;
+	}
 
 	public double calculateArea() {
 		DecimalFormat df = new DecimalFormat("#.##");
