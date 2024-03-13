@@ -1,6 +1,6 @@
 package Abstract;
 
-public class Triangle extends AbstractShape {
+public class Triangle extends AbstractShape implements Resizeable{
 	private double height, base;
 	
 	public Triangle() {
@@ -25,6 +25,11 @@ public class Triangle extends AbstractShape {
 
 	public void setBase(double base) {
 		this.base = base;
+	}
+	
+	public void resize(double factor) {
+		this.base /= factor;
+		this.height /= factor;
 	}
 	
 	public double calculateArea() {
