@@ -23,7 +23,7 @@ public class Circle extends AbstractShape implements Resizeable{
 	}
 	
 	public void resize(double factor) {
-		this.radius /= factor;
+		this.radius *= factor;
 	}
 
 	public double calculateArea() {
