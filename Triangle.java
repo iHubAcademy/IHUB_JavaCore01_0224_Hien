@@ -28,8 +28,8 @@ public class Triangle extends AbstractShape implements Resizeable{
 	}
 	
 	public void resize(double factor) {
-		this.base /= factor;
-		this.height /= factor;
+		this.base *= factor;
+		this.height *= factor;
 	}
 	
 	public double calculateArea() {
