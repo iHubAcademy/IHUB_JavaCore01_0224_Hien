@@ -14,5 +14,13 @@ public class TestAbstract {
 		System.out.println("Dien tich hinh tron: " + circle.calculateArea());
 		System.out.println("Dien tich hinh tam giac: " + triangle.calculateArea());
 		System.out.println("Dien tich hinh chu nhat: " + ractangle.calculateArea());
+		
+		System.out.println();
+		Square square = new Square(5);
+		square.draw();
+		
+		System.out.println();
+		triangle.resize(2);
+		System.out.println("Dien tich hinh tam giac: " + triangle.calculateArea());
 	}
 }
