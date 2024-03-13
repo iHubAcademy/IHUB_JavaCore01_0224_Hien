@@ -28,8 +28,8 @@ public class Ractangle extends AbstractShape implements Resizeable {
 	}
 	
 	public void resize(double factor) {
-		this.length /= factor;
-		this.width /= factor;
+		this.length *= factor;
+		this.width *= factor;
 	}
 	
 	public double calculateArea() {
